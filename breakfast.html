@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this is: meta and head setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Breakfast • The Green Apple Café</title>
+
+    <!-- this is: W3.CSS and Font Awesome -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- this is: linked external CSS files -->
+    <link
+      rel="stylesheet"
+      href="style/collapsible-hamburger-menu-example.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body class="w3-light-grey">
+    <!-- this is: banner from home page -->
+    <div class="banner"></div>
+
+    <!-- this is: top navigation bar (copied from home page) -->
+    <div class="w3-bar w3-center">
+      <div class="menu-center w3-hide-small">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Home</a
+        >
+        <a
+          href="breakfast.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
+          >Breakfast</a
+        >
+        <a
+          href="lunch.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Lunch</a
+        >
+        <a
+          href="menus.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Menus</a
+        >
+        <a
+          href="events.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Events</a
+        >
+        <a
+          href="afternoontea.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Afternoon Tea</a
+        >
+        <a
+          href="contact.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >About</a
+        >
+      </div>
+
+      <!-- this is: hamburger icon for mobile -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- this is: collapsible mobile navigation menu -->
+    <nav
+      id="smallMenu"
+      class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Home</a
+      >
+      <a
+        href="breakfast.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
+        >Breakfast</a
+      >
+      <a
+        href="lunch.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Lunch</a
+      >
+      <a
+        href="menus.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Menus</a
+      >
+      <a
+        href="events.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Events</a
+      >
+      <a
+        href="afternoontea.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Afternoon Tea</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Contact</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >About</a
+      >
+    </nav>
+
+    <!-- this is: main content area -->
+    <main class="w3-content w3-padding-32">
+      <!-- this is: page header -->
+      <header class="w3-center w3-margin-bottom">
+        <h1 class="w3-xxlarge">Breakfast</h1>
+        <p class="w3-large w3-text-dark-grey">Fresh, local, and made daily.</p>
+      </header>
+
+      <!-- this is: egg sandwiches section -->
+      <section aria-labelledby="egg-sandwiches">
+        <h2 id="egg-sandwiches" class="w3-xlarge w3-margin-bottom">
+          Egg Sandwiches
+        </h2>
+        <div class="w3-row w3-stretch">
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Classic Egg & Cheese</h3>
+              <p class="w3-small">Farm egg, cheddar, toasted roll.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Bacon, Egg & Cheese</h3>
+              <p class="w3-small">Crispy bacon, farm egg, cheddar.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Veggie Egg</h3>
+              <p class="w3-small">Spinach, tomato, farm egg, swiss.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is: bagels & spreads section -->
+      <section aria-labelledby="bagels">
+        <h2 id="bagels" class="w3-xlarge w3-margin-top w3-margin-bottom">
+          Bagels & Spreads
+        </h2>
+        <div class="w3-row w3-stretch">
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Plain or Everything</h3>
+              <p class="w3-small">Toasted with butter or cream cheese.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Scallion Cream Cheese</h3>
+              <p class="w3-small">House-made, fresh scallions.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Lox Spread</h3>
+              <p class="w3-small">Smoked salmon cream cheese.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is: pastries section -->
+      <section aria-labelledby="pastries">
+        <h2 id="pastries" class="w3-xlarge w3-margin-top w3-margin-bottom">
+          Pastries
+        </h2>
+        <div class="w3-row w3-stretch">
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Croissant</h3>
+              <p class="w3-small">Buttery and flaky.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Muffin (Daily)</h3>
+              <p class="w3-small">Blueberry, bran, seasonal.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-third w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Scone</h3>
+              <p class="w3-small">House-baked selection.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is: beverages section -->
+      <section aria-labelledby="beverages">
+        <h2 id="beverages" class="w3-xlarge w3-margin-top w3-margin-bottom">
+          Beverages
+        </h2>
+        <div class="w3-row w3-stretch">
+          <div class="w3-half w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Hot Coffee / Tea</h3>
+              <p class="w3-small">Add milk, alt-milk, or sugar.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+
+          <div class="w3-half w3-padding">
+            <article class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Cold Brew / Iced Tea</h3>
+              <p class="w3-small">Brewed daily.</p>
+              <p class="w3-small w3-text-dark-grey">
+                <strong>$</strong> — fill price
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- this is: shared hamburger script -->
+    <script src="scripts/collapsible-hamburger-menu-example.js"></script>
+
+    <!-- this is: footer section copied from home page -->
+    <footer
+      class="w3-container w3-teal w3-padding-32 w3-margin-top w3-center site-footer"
+    >
+      <div class="w3-content footer-inner">
+        <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
+          The Green Apple Café
+        </h3>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          57 Water Street, North Andover, MA 01845
+        </p>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          978-965-5102
+        </p>
+        <hr
+          class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom footer-rule"
+        />
+        <p class="w3-text-white w3-tiny">
+          &copy; 2025 The Green Apple Café. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
