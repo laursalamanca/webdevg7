@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this is: meta and head setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • The Green Apple Café</title>
+
+    <!-- this is: W3.CSS and Font Awesome -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- this is: linked external CSS files -->
+    <link
+      rel="stylesheet"
+      href="style/collapsible-hamburger-menu-example.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body class="w3-light-grey">
+    <!-- this is: banner from home page -->
+    <div class="banner"></div>
+
+    <!-- this is: top navigation bar copied from home page -->
+    <div class="w3-bar w3-center">
+      <div class="menu-center w3-hide-small">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Home</a
+        >
+        <a
+          href="breakfast.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Breakfast</a
+        >
+        <a
+          href="lunch.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Lunch</a
+        >
+        <a
+          href="menus.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Menus</a
+        >
+        <a
+          href="events.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Events</a
+        >
+        <a
+          href="afternoontea.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Afternoon Tea</a
+        >
+        <a
+          href="contact.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >About</a
+        >
+      </div>
+
+      <!-- this is: hamburger icon for mobile -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- this is: collapsible mobile navigation menu -->
+    <nav
+      id="smallMenu"
+      class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Home</a
+      >
+      <a
+        href="breakfast.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Breakfast</a
+      >
+      <a
+        href="lunch.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Lunch</a
+      >
+      <a
+        href="menus.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Menus</a
+      >
+      <a
+        href="events.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Events</a
+      >
+      <a
+        href="afternoontea.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >Afternoon Tea</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
+        >Contact</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+        >About</a
+      >
+    </nav>
+
+    <!-- this is: main contact section -->
+    <main class="w3-content w3-padding-32">
+      <!-- this is: header for contact page -->
+      <header class="w3-center w3-margin-bottom">
+        <h1 class="w3-xxlarge">Contact Us</h1>
+        <p class="w3-large w3-text-dark-grey">
+          Have a question or want to get in touch? We’d love to hear from you!
+        </p>
+      </header>
+
+      <!-- this is: contact form -->
+      <section aria-labelledby="contact-form" class="w3-padding-16">
+        <h2 id="contact-form" class="w3-xlarge w3-margin-bottom">
+          Send a Message
+        </h2>
+        <form
+          class="w3-card w3-white w3-round-large w3-padding"
+          action="#"
+          method="post"
+        >
+          <label class="w3-text-dark-grey" for="name">Name</label>
+          <input
+            class="w3-input w3-border w3-round-large w3-margin-bottom"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label class="w3-text-dark-grey" for="email">Email</label>
+          <input
+            class="w3-input w3-border w3-round-large w3-margin-bottom"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label class="w3-text-dark-grey" for="subject">Subject</label>
+          <input
+            class="w3-input w3-border w3-round-large w3-margin-bottom"
+            type="text"
+            id="subject"
+            name="subject"
+          />
+
+          <label class="w3-text-dark-grey" for="message">Message</label>
+          <textarea
+            class="w3-input w3-border w3-round-large w3-margin-bottom"
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w3-button w3-round-large w3-teal w3-hover-light-green"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <!-- this is: contact information section -->
+      <section aria-labelledby="visit-us" class="w3-padding-16">
+        <h2 id="visit-us" class="w3-xlarge w3-margin-top w3-margin-bottom">
+          Visit Us
+        </h2>
+        <div class="w3-row-padding">
+          <div class="w3-half w3-padding">
+            <div class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Location</h3>
+              <p class="w3-small">57 Water Street, North Andover, MA 01845</p>
+              <p class="w3-small">Phone: 978-965-5102</p>
+              <p class="w3-small">Email: info@thegreenapplecafe.com</p>
+            </div>
+          </div>
+
+          <div class="w3-half w3-padding">
+            <div class="w3-card w3-white w3-round-large w3-padding">
+              <h3 class="w3-large">Hours</h3>
+              <p class="w3-small">Monday – Friday: 7:00 AM – 3:00 PM</p>
+              <p class="w3-small">Saturday – Sunday: 8:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- this is: embedded Google map -->
+      <section aria-labelledby="map" class="w3-padding-16">
+        <h2 id="map" class="w3-xlarge w3-margin-top w3-margin-bottom">
+          Find Us on the Map
+        </h2>
+        <div class="w3-card w3-white w3-round-large w3-padding w3-center">
+          <iframe
+            class="w3-round-large w3-image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.6528963727833!2d-71.12137242357168!3d42.698880271169084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3096a7a7f4071%3A0x64d4a6b267efcd0!2s57%20Water%20St%2C%20North%20Andover%2C%20MA%2001845!5e0!3m2!1sen!2sus!4v1698702461786!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- this is: shared hamburger script -->
+    <script src="scripts/collapsible-hamburger-menu-example.js"></script>
+
+    <!-- this is: footer section copied from home page -->
+    <footer
+      class="w3-container w3-teal w3-padding-32 w3-margin-top w3-center site-footer"
+    >
+      <div class="w3-content footer-inner">
+        <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
+          The Green Apple Café
+        </h3>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          57 Water Street, North Andover, MA 01845
+        </p>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          978-965-5102
+        </p>
+        <hr
+          class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom footer-rule"
+        />
+        <p class="w3-text-white w3-tiny">
+          &copy; 2025 The Green Apple Café. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
