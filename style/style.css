@@ -1,11 +1,10 @@
+/* this is: hero banner image + layout */
 .banner {
   width: 100%;
   height: 250px;
-
   background-image: url("../images/greenapplebanner.png");
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: cover;
   position: relative;
   display: flex;
@@ -14,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/* this is: optional logo in the banner */
 .banner-logo {
   height: 80px;
   width: auto;
@@ -21,13 +21,59 @@
   z-index: 1;
 }
 
-/* Media query for responsive design */
+/* this is: nav link active state (works on desktop + mobile menus) */
+.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* this is: small horizontal spacing helper used in your nav */
+.x-margin-small {
+  margin: 0 6px;
+}
+
+/* this is: hamburger button sizing (mobile) */
+.menu-toggle {
+  font-size: 22px;
+  padding: 10px 14px;
+}
+
+/* this is: footer layout classes to replace inline styles in HTML */
+.site-footer {
+  width: 100%;
+  text-align: center;
+  /* this is: remove fixed positioning; let content flow naturally */
+}
+
+.footer-inner {
+  min-height: 130px;
+}
+
+.footer-rule {
+  width: 25%;
+}
+
+/* this is: responsive tweaks for smaller screens */
 @media screen and (max-width: 768px) {
+  /* this is: shorter banner on phones */
   .banner {
     height: 150px;
   }
 
+  /* this is: scale logo down on phones */
   .banner-logo {
     height: 60px;
+  }
+
+  /* this is: make footer rule a bit wider on small screens */
+  .footer-rule {
+    width: 40%;
+  }
+}
+
+/* this is: ultra-small screens */
+@media screen and (max-width: 400px) {
+  .footer-rule {
+    width: 55%;
   }
 }
