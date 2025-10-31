@@ -3,13 +3,13 @@
   "configurations": [
     {
       "name": "Open index.html (file)",
-      "type": "pwa-chrome",
+      "type": "chrome",
       "request": "launch",
       "file": "${workspaceFolder}/index.html"
     },
     {
       "name": "Launch Chrome on http://localhost:5500",
-      "type": "pwa-chrome",
+      "type": "chrome",
       "request": "launch",
       "url": "http://localhost:5500/index.html",
       "webRoot": "${workspaceFolder}"
