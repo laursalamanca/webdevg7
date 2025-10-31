@@ -27,7 +27,13 @@
   }
 }
 
-.food-image{
+.food-image {
   width: 100%;
 }
 
+.footer-bg {
+  background-image: url("images/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
