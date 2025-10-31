@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this is: meta and head setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About • The Green Apple Café</title>
+
+    <!-- this is: W3CSS + Font Awesome -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- this is: shared CSS -->
+    <link
+      rel="stylesheet"
+      href="style/collapsible-hamburger-menu-example.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body class="w3-light-grey">
+    <!-- this is: banner from home page -->
+    <div class="banner"></div>
+
+    <!-- this is: top navigation bar copied from home page -->
+    <div class="w3-bar w3-center">
+      <div class="menu-center w3-hide-small">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Home</a
+        >
+        <a
+          href="breakfast.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Breakfast</a
+        >
+        <a
+          href="lunch.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Lunch</a
+        >
+        <a
+          href="menus.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Menus</a
+        >
+        <a
+          href="events.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Events</a
+        >
+        <a
+          href="afternoontea.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Afternoon Tea</a
+        >
+        <a
+          href="contact.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
+          >About</a
+        >
+      </div>
+
+      <!-- this is: hamburger icon for mobile -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- this is: collapsible mobile navigation menu -->
+    <nav
+      id="smallMenu"
+      class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large w3-center"
+      aria-hidden="true"
+    >
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="breakfast.html" class="w3-bar-item w3-button">Breakfast</a>
+      <a href="lunch.html" class="w3-bar-item w3-button">Lunch</a>
+      <a href="menus.html" class="w3-bar-item w3-button">Menus</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events</a>
+      <a href="afternoontea.html" class="w3-bar-item w3-button"
+        >Afternoon Tea</a
+      >
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+      <a href="about.html" class="w3-bar-item w3-button active">About</a>
+    </nav>
+
+    <!-- this is: main content -->
+    <main class="w3-content w3-padding-32">
+      <!-- this is: hero quote -->
+      <section class="w3-center w3-margin-bottom">
+        <blockquote class="about-quote w3-xlarge">
+          “Bring to the table a delicious breakfast or lunch made with local
+          ingredients & love straight from the kitchen.”
+        </blockquote>
+      </section>
+
+      <!-- this is: about story + main photo -->
+      <section class="w3-row-padding w3-stretch">
+        <div class="w3-col m5 w3-margin-bottom">
+          <figure class="w3-card w3-white w3-round-large">
+            <img
+              src="Images/gac_cindy.jpg"
+              alt="Cindy Lorentz Robinson at The Green Apple Café"
+              class="w3-image w3-round-large"
+            />
+            <figcaption
+              class="w3-small w3-center w3-text-dark-grey w3-margin-top"
+            >
+              Owner & Chef — Cindy Lorentz Robinson
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="w3-col m7">
+          <h1 class="w3-xxlarge w3-margin-small">About Green Apple Café</h1>
+          <p class="w3-large w3-text-dark-grey">
+            The Green Apple Café is owned by
+            <strong>Cindy Lorentz Robinson</strong>, a lifelong North Andover
+            resident and graduate of both the French Culinary Institute in New
+            York and Merrimack College. After ten years as a chef at the Crane
+            Estate, she opened Green Apple Café to bring fresh, locally sourced
+            food to her community.
+          </p>
+          <p>
+            We proudly serve breakfast and lunch crafted from local ingredients,
+            featuring gluten-free options and Fair Trade coffee. Whether you’re
+            dining in or grabbing takeout, every dish is made with love and
+            care.
+          </p>
+          <p>
+            The Green Apple Café also offers <strong>catering</strong> for
+            events of all sizes — from small gatherings to large celebrations.
+            Let us bring our kitchen to your table.
+          </p>
+        </div>
+      </section>
+
+      <!-- this is: photo gallery -->
+      <section class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third w3-margin-bottom">
+          <img
+            src="Images/gac_logo.jpg"
+            alt="Green Apple Café logo"
+            class="w3-image w3-round-large"
+          />
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img
+            src="Images/show2.jpg"
+            alt="Inside Green Apple Café dining area"
+            class="w3-image w3-round-large"
+          />
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img
+            src="Images/show12.jpg"
+            alt="Green Apple Café food and atmosphere"
+            class="w3-image w3-round-large"
+          />
+        </div>
+      </section>
+
+      <!-- this is: callout to contact -->
+      <section class="w3-margin-top">
+        <div
+          class="w3-panel w3-pale-green w3-border w3-round-large about-callout"
+        >
+          <h2 class="w3-xlarge w3-margin-0">We Cater!</h2>
+          <p class="w3-margin-top">
+            From breakfast boards to hearty lunch platters — we’ll bring Green
+            Apple to your event.
+          </p>
+          <a
+            href="contact.html"
+            class="w3-button w3-teal w3-round-large w3-hover-light-green"
+          >
+            Get in touch
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- this is: shared scripts -->
+    <script src="scripts/collapsible-hamburger-menu-example.js"></script>
+
+    <!-- this is: footer -->
+    <footer
+      class="w3-container w3-teal w3-padding-32 w3-margin-top w3-center site-footer"
+    >
+      <div class="w3-content footer-inner">
+        <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
+          The Green Apple Café
+        </h3>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          57 Water Street, North Andover, MA 01845
+        </p>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          978-965-5102
+        </p>
+        <hr
+          class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom footer-rule"
+        />
+        <p class="w3-text-white w3-tiny">
+          &copy; 2025 The Green Apple Café. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

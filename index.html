@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- this is: meta and head setup -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page</title>
+    <title>Home Page • The Green Apple Café</title>
+
+    <!-- this is: W3CSS + Font Awesome -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- this is: shared CSS (nav + project styles) -->
     <link
       rel="stylesheet"
       href="style/collapsible-hamburger-menu-example.css"
@@ -17,17 +22,18 @@
 
     <link rel="stylesheet" href="style/indexStyle.css" />
   </head>
-  <body>
-    <!--Banner-->
 
+  <body class="w3-light-grey">
+    <!-- this is: banner -->
     <div class="banner"></div>
-    <!-- Top Navigation Bar -->
+
+    <!-- this is: top navigation bar -->
     <div class="w3-bar w3-center">
-      <!-- Desktop Menu Items (hidden on small screens) -->
-      <div class="menu-center w3-hide-small">
+      <!-- this is: desktop nav (hidden on small screens) -->
+      <nav class="menu-center w3-hide-small" aria-label="Primary">
         <a
           href="index.html"
-          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+          class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small active"
           >Home</a
         >
         <a
@@ -45,33 +51,29 @@
           class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
           >Menus</a
         >
-
         <a
           href="events.html"
           class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
           >Events</a
         >
-
         <a
           href="afternoontea.html"
           class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
           >Afternoon Tea</a
         >
-
         <a
           href="contact.html"
           class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
           >Contact</a
         >
-
         <a
           href="about.html"
           class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
           >About</a
         >
-      </div>
+      </nav>
 
-      <!-- Hamburger Icon (right side, visible only on small screens) -->
+      <!-- this is: hamburger icon for mobile -->
       <button
         class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
         aria-controls="smallMenu"
@@ -83,156 +85,74 @@
       </button>
     </div>
 
-    <!-- Collapsible Mobile Menu -->
-    <div
+    <!-- this is: collapsible mobile menu -->
+    <nav
       id="smallMenu"
       class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large w3-center"
       aria-hidden="true"
+      aria-label="Mobile Primary"
     >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="index.html" class="w3-bar-item w3-button x-margin-small active"
         >Home</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="breakfast.html" class="w3-bar-item w3-button x-margin-small"
         >Breakfast</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="lunch.html" class="w3-bar-item w3-button x-margin-small"
         >Lunch</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="menus.html" class="w3-bar-item w3-button x-margin-small"
         >Menus</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="events.html" class="w3-bar-item w3-button x-margin-small"
         >Events</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="afternoontea.html" class="w3-bar-item w3-button x-margin-small"
         >Afternoon Tea</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="contact.html" class="w3-bar-item w3-button x-margin-small"
         >Contact</a
       >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-green x-margin-small"
+      <a href="about.html" class="w3-bar-item w3-button x-margin-small"
         >About</a
       >
-    </div>
+    </nav>
 
-    <section class="w3-center w3-container w3-padding-32">
-      <h1 class="w3-text-light-green">
-        <b> Welcome to the Green Apple Cafe,</b>
-      </h1>
-      <h2 class="w3-text-light-green">
-        <b>a full service breakfast & lunch restaurant in North Andover!</b>
-      </h2>
+    <!-- this is: page content (add your home content here) -->
+    <main class="w3-content w3-padding-32">
+      <header class="w3-center w3-margin-bottom">
+        <h1 class="w3-xxlarge">Welcome to The Green Apple Café</h1>
+        <p class="w3-large w3-text-dark-grey">
+          Fresh breakfast and lunch made daily with local ingredients.
+        </p>
+      </header>
+      <!-- this is: add hero cards, promos, etc. as needed -->
+    </main>
 
-      <hr />
-      <h4>Our philosophy is simple:</h4>
-      <h4>
-        <b
-          >"Bring to the table a delicious breakfast or lunch made with local
-          ingredients & love straight from the kitchen"
-        </b>
-      </h4>
-    </section>
-    <div class="w3-display-container" style="height: 300px">
-      <div class="w3-display-middle w3-blue">
-        <img class="mySlides" src="images/Pie.jpg" />
-        <img class="mySlides" src="images/hotchocolate.jpg" />
-        <img class="mySlides" src="images/coffee.jpg" />
-        <img class="mySlides" src="images/show7.jpg" />
-        <img class="mySlides" src="images/tea.jpg" />
-        <img class="mySlides" src="images/atomiccoffee.jpg" />
-        <img class="mySlides" src="images/locallygrownfood.jpg" />
-      </div>
-    </div>
-
-    <br />
-    <br />
-    <hr />
-
-    <div class="textBox">
-      <p>
-        Check out our special Cozy Afternoon Teas happening in this season
-        Saturdays at noon!
-      </p>
-
-      <button class="centered-button">Call for Reservations</button>
-
-      <p>
-        We now offer
-        <a
-          href="https://www.clover.com/online-ordering/green-apple-caf-north-andover"
-          >online ordering</a
-        >
-        with delivery via
-        <a href="https://order.online/store/green-apple-cafe-326156"
-          >Door Dash Storefront</a
-        >
-        and are currently open for take out, indoor and outdoor seating is
-        available on our front porch and on out back. We look forward to seeing
-        you soon!
-      </p>
-      <section class="interior-section">
-        <div class="interior-card">
-          <img
-            src="images/greenapplecafe-interior.jpg"
-            alt="Inside The Green Apple Café"
-          />
-        </div>
-      </section>
-
-      <p>
-        The Green Apple Café is a full service restaurant and is open Wednesday
-        through Sunday from 7:00 AM to 1 PM. We serve breakfast all day and
-        lunch beginning at 11:00 AM. We offer take-out meals, fair trade coffee
-        and specialty drinks, gluten free and vegetarian options. We also have
-        Afternoon Tea monthly, catering service, and can host functions in our
-        dining room after 1:00 PM. Host your next Bridal Shower, Tea, or Baby
-        Shower here!
-      </p>
-    </div>
-
-    <!--Scripts-->
+    <!-- this is: shared scripts -->
     <script src="scripts/collapsible-hamburger-menu-example.js"></script>
-    <script src="scripts/indexScript.js"></script>
+
+    <!-- this is: footer (no inline styles) -->
+    <footer
+      class="w3-container w3-teal w3-padding-32 w3-margin-top w3-center site-footer"
+    >
+      <div class="w3-content footer-inner">
+        <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
+          The Green Apple Café
+        </h3>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          57 Water Street, North Andover, MA 01845
+        </p>
+        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
+          978-965-5102
+        </p>
+        <hr
+          class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom footer-rule"
+        />
+        <p class="w3-text-white w3-tiny">
+          &copy; 2025 The Green Apple Café. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
-  <footer
-    class="w3-container w3-light-green w3-padding-32 w3-margin-top w3-center"
-  >
-    <div class="w3-content">
-      <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
-        The Green Apple Café
-      </h3>
-
-      <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
-        57 Water Street, North Andover, MA 01845
-      </p>
-      <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
-        978-965-5102
-      </p>
-
-      <hr
-        class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom w3-center"
-        style="width: 25%; margin-left: auto; margin-right: auto"
-      />
-
-      <p class="w3-text-white w3-tiny">
-        &copy; 2025 The Green Apple Café. All rights reserved.
-      </p>
-    </div>
-  </footer>
 </html>

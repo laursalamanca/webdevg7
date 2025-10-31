@@ -1,11 +1,13 @@
+/* This is the main stylesheet for The Green Apple Café project */
+/* This is where all design rules live so our HTML stays clean and compliant */
+
+/* This is the banner — the big image across the top of every page */
 .banner {
   width: 100%;
   height: 250px;
-
-  background-image: url("../images/greenapplebanner.png");
+  background-image: url("../Images/greenapplebanner.png"); /* This is your banner image path (check case sensitivity) */
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: cover;
   position: relative;
   display: flex;
@@ -14,6 +16,7 @@
   box-sizing: border-box;
 }
 
+/* This is an optional logo that sits inside the banner */
 .banner-logo {
   height: 80px;
   width: auto;
@@ -21,10 +24,148 @@
   z-index: 1;
 }
 
+/* This is a helper that keeps the desktop menu nicely centered */
+.menu-center {
+  display: inline-block;
+}
+
+/* This is how we highlight the current page in the nav bar */
+.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* This is a small spacing helper used for nav links */
+.x-margin-small {
+  margin: 0 6px;
+}
+
+/* This is the hamburger button styling for small screens */
+.menu-toggle {
+  font-size: 22px;
+  padding: 10px 14px;
+}
+
+/* This is the footer layout — centered and clean */
+.site-footer {
+  width: 100%;
+  text-align: center;
+  /* This is intentionally non-fixed so the page scrolls naturally */
+}
+
+.footer-inner {
+  min-height: 130px;
+}
+
+/* This is the small horizontal rule in the footer */
+.footer-rule {
+  width: 25%;
+}
+
+/* This is for embedded maps so they don’t use inline styling */
+.map-frame {
+  border: 0;
+}
+
+/* This is the feedback text for the contact form */
+.status-success {
+  color: #2e7d32; /* This is a soft green for success messages */
+}
+
+.status-error {
+  color: #c62828; /* This is a soft red for errors */
+}
+
+/* This is a subtle fade-in animation used for small visual polish */
+@keyframes x-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: x-fade-in 300ms ease-out;
+}
+
+/* This is a custom focus outline for keyboard users */
+:focus-visible {
+  outline: 3px solid #81c784;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---------------- ABOUT PAGE SECTION ---------------- */
+/* This is where we style the About page — photos, quotes, and info cards */
+
+.about-quote {
+  font-style: italic;
+  color: #2e2e2e;
+  margin: 20px auto;
+  padding: 10px 20px;
+  max-width: 700px;
+  border-left: 5px solid #4caf50;
+  background-color: #f8fff8;
+  border-radius: 8px;
+}
+
+/* This is the standard image setup for About page pictures */
+.about-img-card img,
+.w3-image.w3-round-large {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* This is the caption text shown under images */
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* This is the design for the small feature cards (Local, Gluten-Free, Coffee) */
+.about-value {
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about-value i {
+  font-size: 1.8rem;
+  color: #4caf50;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* This is the light green callout box for catering info */
+.about-callout {
+  background-color: #f5fff5;
+  border-left: 6px solid #4caf50;
+  padding: 16px 20px;
+  border-radius: 10px;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+/* This is where we adapt everything for tablets and phones */
+
 @media screen and (max-width: 768px) {
+  /* This is a shorter banner height for smaller screens */
   .banner {
     height: 150px;
   }
+<<<<<<< HEAD
 }
 
 .food-image {
@@ -36,4 +177,41 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+=======
+
+  /* This is a smaller logo in the banner for balance */
+  .banner-logo {
+    height: 60px;
+  }
+
+  /* This is a slightly wider footer line for smaller layouts */
+  .footer-rule {
+    width: 40%;
+  }
+
+  /* This is smaller padding for the quote section on mobile */
+  .about-quote {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+
+  /* This is smaller captions for mobile */
+  figcaption {
+    font-size: 0.85rem;
+  }
+
+  /* This is better spacing for About value cards when stacked */
+  .about-value {
+    margin-bottom: 10px;
+  }
+>>>>>>> add84e43252a91bdc18f9a6c28810873a681f0a9
 }
+
+/* This is an extra-small screen setup for very narrow phones */
+@media screen and (max-width: 400px) {
+  .footer-rule {
+    width: 55%;
+  }
+}
+
+/* This is the end of style.css — clean, readable, and fully external */
