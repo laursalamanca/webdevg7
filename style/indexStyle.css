@@ -1,0 +1,38 @@
+.mySlides {
+  max-width: 500px;
+}
+
+.textBox {
+  font-size: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #000000;
+  border: none;
+  margin: 20px auto;
+}
+
+.centered-button {
+  display: block;
+  width: 200px;
+  padding: 15px 30px;
+  margin: 20px auto;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.centered-button:hover {
+  background-color: #45a049;
+}

@@ -21,13 +21,8 @@
   z-index: 1;
 }
 
-/* Media query for responsive design */
 @media screen and (max-width: 768px) {
   .banner {
     height: 150px;
-  }
-
-  .banner-logo {
-    height: 60px;
   }
 }
