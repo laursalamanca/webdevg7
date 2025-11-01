@@ -165,7 +165,6 @@ figcaption {
   .banner {
     height: 150px;
   }
-<<<<<<< HEAD
 }
 
 .food-image {
@@ -177,7 +176,6 @@ figcaption {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-=======
 
   /* This is a smaller logo in the banner for balance */
   .banner-logo {
@@ -204,7 +202,6 @@ figcaption {
   .about-value {
     margin-bottom: 10px;
   }
->>>>>>> add84e43252a91bdc18f9a6c28810873a681f0a9
 }
 
 /* This is an extra-small screen setup for very narrow phones */
