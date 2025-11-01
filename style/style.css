@@ -165,6 +165,17 @@ figcaption {
   .banner {
     height: 150px;
   }
+}
+
+.food-image {
+  width: 100%;
+}
+
+.footer-bg {
+  background-image: url("images/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   /* This is a smaller logo in the banner for balance */
   .banner-logo {
