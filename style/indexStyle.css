@@ -20,7 +20,7 @@ hr {
   display: block;
   margin: 30px auto;
   padding: 14px 28px;
-  background-color: #a8e55e;
+  background-color: #8db600;
   color: white;
   font-size: 18px;
   font-weight: 600;
@@ -32,7 +32,7 @@ hr {
 }
 
 .centered-button:hover {
-  background-color: #8db600; /* darker shade on hover */
+  background-color: #65994e;
 }
 
 .interior-section {
@@ -74,7 +74,7 @@ hr {
 }
 
 .philosophy-box h4 {
-  color: #4caf50;
+  color: #65994e;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -93,4 +93,15 @@ hr {
   background-repeat: no-repeat;
   color: white;
   position: relative;
+}
+
+.fb-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.fb-post {
+  max-width: 500px;
+  width: 100%;
 }
