@@ -133,21 +133,13 @@
 
     <section class="w3-center w3-container w3-padding-32">
       <h1 class="w3-text-light-green">
-        <b>Welcome to the Green Apple Cafe</b>
+        <b>Welcome to the Green Apple Cafe!</b>
       </h1>
       <h2 class="w3-text-light-green">
-        A full service breakfast & lunch restaurant in North Andover!
+        A full service breakfast & lunch restaurant in North Andover
       </h2>
-
-      <hr />
-      <div class="philosophy-box">
-        <h4>Our philosophy is simple:</h4>
-        <p>
-          “Bring to the table a delicious breakfast or lunch made with local
-          ingredients & love straight from the kitchen.”
-        </p>
-      </div>
     </section>
+
     <div class="w3-display-container" style="height: 300px">
       <div class="w3-display-middle w3-blue">
         <img class="mySlides" src="Images/Pie.jpg" />
@@ -159,29 +151,34 @@
         <img class="mySlides" src="Images/locallygrownfood.jpg" />
       </div>
     </div>
-
     <br />
-    <br />
-    <hr />
+    <div class="philosophy-box">
+      <h4>☕ <b>Our Philosophy is Simple</b> ☕</h4>
+      <p>
+        “Bring to the table a delicious breakfast or lunch made with local
+        ingredients & love straight from the kitchen.”
+      </p>
+    </div>
 
     <div class="textBox">
       <p>
         Check out our special Cozy Afternoon Teas happening in this season
         Saturdays at noon!
       </p>
+      <p>Click below to call and make a reservation! 1-978-965-5102</p>
+
+      <button
+        onclick="window.location.href='tel:+19789655102'"
+        class="centered-button"
+      >
+        Make a Reservation
+      </button>
 
       <section class="interior-section">
         <div class="interior-card">
           <img src="Images/teaset.jpg" alt="Tea Set" />
         </div>
       </section>
-
-      <button
-        onclick="window.location.href='tel:+19787718659'"
-        class="centered-button"
-      >
-        Call for Reservations
-      </button>
 
       <p>
         The Green Apple Café is a full service restaurant and is open Wednesday
@@ -220,6 +217,28 @@
         available on our front porch and on out back. We look forward to seeing
         you soon!
       </p>
+    </div>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+    ></script>
+
+    <section class="w3-center w3-container">
+      <h2 class="w3-text-light-green">
+        <b>Follow us on Facebook!</b>
+      </h2>
+    </section>
+
+    <div class="fb-container">
+      <div
+        class="fb-post"
+        data-href="https://www.facebook.com/photo/?fbid=1376940341100535&set=a.525990302862214&__cft__[0]=AZXqGH4tVapaB0y_ekj4Ap8L-Gzgv0jEZhICG2JTD5_uZLSUiYleYEVJIObziOEt1Zpa-70vvIHWafSez_yAstrSC_sec6jxxl2F3rjzHYBQ3nQ9scBNMLONYQ9GwE5ScMb_I7eDj8JcwppmYOHtYz7rrd_VwGXJR6ukQ6dQDoawXjtrKnEs_r35-Tsnc6oxg6s&__tn__=EH-R"
+        data-width="500"
+      ></div>
     </div>
 
     <!--Scripts-->
