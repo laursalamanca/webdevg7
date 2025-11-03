@@ -185,7 +185,7 @@ object-fit: cover;
 }
 
 .footer-bg {
-  background-image: url("images/footer-bg.png") !important; 
+  background-image: url("Images/footer-bg.png") !important; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
