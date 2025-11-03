@@ -86,14 +86,7 @@ hr {
   line-height: 1.6;
 }
 
-.footer-background {
-  background-image: url("../images/footer-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  position: relative;
-}
+
 
 .fb-container {
   display: flex;
