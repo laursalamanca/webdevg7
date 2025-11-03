@@ -100,16 +100,13 @@
       <a href="about.html" class="w3-bar-item w3-button active">About</a>
     </nav>
 
+    <section class="w3-center w3-container w3-padding-32">
+      <h1 class="w3-text-light-green">
+        <b>About Green Apple Cafe</b>
+      </h1>
+    </section>
     <!-- this is: main content -->
-    <main class="w3-content w3-padding-32">
-      <!-- this is: hero quote -->
-      <section class="w3-center w3-margin-bottom">
-        <blockquote class="about-quote w3-xlarge">
-          “Bring to the table a delicious breakfast or lunch made with local
-          ingredients & love straight from the kitchen.”
-        </blockquote>
-      </section>
-
+    <main class="w3-content">
       <!-- this is: about story + main photo -->
       <section class="w3-row-padding w3-stretch">
         <div class="w3-col m5 w3-margin-bottom">
@@ -117,7 +114,7 @@
             <img
               src="Images/gac_cindy.jpg"
               alt="Cindy Lorentz Robinson at The Green Apple Café"
-              class="w3-image w3-round-large"
+              class="w3-image"
             />
             <figcaption
               class="w3-small w3-center w3-text-dark-grey w3-margin-top"
@@ -128,7 +125,6 @@
         </div>
 
         <div class="w3-col m7">
-          <h1 class="w3-xxlarge w3-margin-small">About Green Apple Café</h1>
           <p class="w3-large w3-text-dark-grey">
             The Green Apple Café is owned by
             <strong>Cindy Lorentz Robinson</strong>, a lifelong North Andover
@@ -137,13 +133,13 @@
             Estate, she opened Green Apple Café to bring fresh, locally sourced
             food to her community.
           </p>
-          <p>
+          <p class="w3-large w3-text-dark-grey">
             We proudly serve breakfast and lunch crafted from local ingredients,
             featuring gluten-free options and Fair Trade coffee. Whether you’re
             dining in or grabbing takeout, every dish is made with love and
             care.
           </p>
-          <p>
+          <p class="w3-large w3-text-dark-grey">
             The Green Apple Café also offers <strong>catering</strong> for
             events of all sizes — from small gatherings to large celebrations.
             Let us bring our kitchen to your table.
@@ -151,26 +147,36 @@
         </div>
       </section>
 
-      <!-- this is: photo gallery -->
-      <section class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-third w3-margin-bottom">
-          <img
-            src="Images/gac_logo.jpg"
-            alt="Green Apple Café logo"
-            class="w3-image w3-round-large"
-          />
+      <section class="w3-row-padding w3-margin-top">
+        <!-- Left side: stacked paragraphs -->
+        <div class="w3-twothird w3-left">
+          <p class="w3-text-dark-grey w3-large w3-margin-bottom">
+            At The Green Apple Café, we believe that great food and a welcoming
+            atmosphere go hand in hand. Every dish we serve is crafted with
+            care, using fresh, locally sourced ingredients that reflect the
+            flavors of our community. From our signature brunch plates to our
+            hand-blended teas, every detail is made to comfort and delight.
+          </p>
+          <p class="w3-text-dark-grey w3-large">
+            We’re more than just a place to grab a bite — we’re a gathering spot
+            for laughter, connection, and celebration. Whether you’re joining us
+            for one of our cozy afternoon tea parties, a seasonal tasting event,
+            or a special celebration with friends, we strive to make every visit
+            feel memorable. Step inside, take a seat, and let us treat you to a
+            warm experience that feels like home.
+          </p>
+
+          <p class="w3-text-dark-grey w3-large">
+            Join us soon — there’s always a cup of tea and a friendly hello
+            waiting for you!
+          </p>
         </div>
-        <div class="w3-third w3-margin-bottom">
+
+        <!-- Right side: image -->
+        <div class="w3-third w3-right">
           <img
             src="Images/show2.jpg"
             alt="Inside Green Apple Café dining area"
-            class="w3-image w3-round-large"
-          />
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img
-            src="Images/show12.jpg"
-            alt="Green Apple Café food and atmosphere"
             class="w3-image w3-round-large"
           />
         </div>
@@ -178,9 +184,7 @@
 
       <!-- this is: callout to contact -->
       <section class="w3-margin-top">
-        <div
-          class="w3-panel w3-pale-green w3-border w3-round-large about-callout"
-        >
+        <div class="w3-panel w3-border w3-round-large about-callout">
           <h2 class="w3-xlarge w3-margin-0">We Cater!</h2>
           <p class="w3-margin-top">
             From breakfast boards to hearty lunch platters — we’ll bring Green
@@ -188,7 +192,7 @@
           </p>
           <a
             href="contact.html"
-            class="w3-button w3-teal w3-round-large w3-hover-light-green"
+            class="w3-button w3-light-green w3-round-large w3-hover-light-green"
           >
             Get in touch
           </a>
@@ -198,28 +202,31 @@
 
     <!-- this is: shared scripts -->
     <script src="scripts/collapsible-hamburger-menu-example.js"></script>
-
-    <!-- this is: footer -->
-    <footer
-      class="w3-container w3-teal w3-padding-32 w3-margin-top w3-center site-footer"
-    >
-      <div class="w3-content footer-inner">
-        <h3 class="w3-xlarge w3-text-white w3-margin-bottom">
-          The Green Apple Café
-        </h3>
-        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
-          57 Water Street, North Andover, MA 01845
-        </p>
-        <p class="w3-opacity w3-text-white w3-small w3-margin-bottom">
-          978-965-5102
-        </p>
-        <hr
-          class="w3-border-white w3-opacity w3-margin-top w3-margin-bottom footer-rule"
-        />
-        <p class="w3-text-white w3-tiny">
-          &copy; 2025 The Green Apple Café. All rights reserved.
-        </p>
-      </div>
-    </footer>
   </body>
+
+  <footer
+    class="w3-container w3-light-green w3-padding-32 w3-margin-top w3-center footer-background"
+  >
+    <div class="w3-content">
+      <h3 class="w3-xlarge w3-text-brown w3-margin-bottom">
+        The Green Apple Café
+      </h3>
+
+      <p class="w3-opacity w3-text-brown w3-small w3-margin-bottom">
+        57 Water Street, North Andover, MA 01845
+      </p>
+      <p class="w3-opacity w3-text-brown w3-small w3-margin-bottom">
+        978-965-5102
+      </p>
+
+      <hr
+        class="w3-border-brown w3-opacity w3-margin-top w3-margin-bottom w3-center"
+        style="width: 25%; margin-left: auto; margin-right: auto"
+      />
+
+      <p class="w3-text-brown w3-tiny">
+        &copy; 2025 The Green Apple Café. All rights reserved.
+      </p>
+    </div>
+  </footer>
 </html>

@@ -137,7 +137,7 @@ figcaption {
   font-weight: 600;
   letter-spacing: 0.3px;
   background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #000000;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -151,8 +151,8 @@ figcaption {
 
 /* This is the light green callout box for catering info */
 .about-callout {
-  background-color: #f5fff5;
-  border-left: 6px solid #4caf50;
+  background-color: #ffffff;
+  border-left: 6px solid #58b55b;
   padding: 16px 20px;
   border-radius: 10px;
 }
@@ -224,4 +224,11 @@ object-fit: cover;
   }
 }
 
-/* This is the end of style.css — clean, readable, and fully external */
+.footer-background {
+  background-image: url("../Images/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
